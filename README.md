@@ -1,1 +1,2 @@
 # IntroToJava
+My IntroToJava Website covers about the fundamental concepts of Java which I have learned in Intro to CS in Rutgers. In this website, we will cover the basics of the Java programming language in which you will apply what you've learned to create small programming projects. 
