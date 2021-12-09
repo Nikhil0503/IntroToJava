@@ -9,13 +9,14 @@ let person = {
     name: 'Nikhil',
     age: 18
 };
-
+/*
 let student = {
     name = 'Nikhil', 
     age = 18,
     yearOfGrad = 2025,
     major = 'CS'
 }
+*/
 function setName(name){
     this.name = name;
 }
@@ -65,4 +66,7 @@ switch(hour){
     case(hour >= 12 && hour <= 18):
         console.log('Good afternoon');
         break;
+}
+for(let i = 0; i < 5; i++){
+    console.log('Hello, World');
 }
