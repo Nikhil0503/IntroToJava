@@ -8,14 +8,32 @@
             <title>Methods</title>
         </head>
         <style>
-            body{
-                background-color: rgb(235, 245, 147);
-                font-family:'Times New Roman', Times, serif;
-                color:darkblue;
-            }
+             body{
+            background: linear-gradient(-90deg, #e4ee52, #3ce759, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+    }
+        @keyframes change {
+        0%{
+            background-position: 50% 50%;
+        }
+         50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+      }
+    }
             .Methods{
                 font-size: 32px;
                 text-align: center;
+            }
+            .Euclid{
+                display: block;
+                float:right;
+                border-radius: 15px;
             }
             .Method{
                 font-size: 28px;
@@ -38,9 +56,16 @@
             .Examples{
                 font-size: 28px;
             }
+            .Enjoy{
+                font-size: 1.5em;
+            }
+            .List{
+                font-size: 1.3em;
+            }
         </style>
         <body>
             <p class = "Methods"> Methods</p>
+            <img class = "Euclid" src="images/Algorithm.png" alt="An example of a method.">
             <h1 class = "Method">Importance of Methods</h1>
             <a class = "Intro" href="https://www.youtube.com/watch?v=MWrIp7a7tiw">Methods Intro</a>
             <h2 class = "Signature">Method Signature + Scope</h2>
@@ -48,7 +73,15 @@
             <h3 class = "Overloading">Overloading/Overriding</h3>
             <a class = "Over" href="https://www.youtube.com/watch?v=FdiHlBj2sm0">Overload/Override</a>
             <h4 class = "Examples">Sample Method Programs</h4>
-            <a href=""></a>
+            <p class = "Enjoy">Feel free to create methods from the concepts we discussed in the course so far.</p>
+            <ol class = "List">
+                <li>Print Statements</li>
+                <li>Variables (Primitive/Reference)</li>
+                <li>Operations</li>
+                <li>Conditionals</li>
+                <li>Loops</li>
+                <li>Arrays</li>
+            </ol>
             <a href="IntroToJava.html"></a>
         </body>
         </html>

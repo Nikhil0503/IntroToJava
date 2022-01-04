@@ -5,18 +5,14 @@ let width = 12;
 console.log(width);
 
 //Objects
-let person = {
-    name: 'Nikhil',
-    age: 18
-};
-/*
 let student = {
-    name = 'Nikhil', 
-    age = 18,
-    yearOfGrad = 2025,
-    major = 'CS'
-}
-*/
+    name: 'Nikhil',
+    age: 18,
+    yearOfGrad: 2025,
+    major: 'CS'
+};
+console.log(student);
+
 function setName(name){
     this.name = name;
 }
@@ -24,11 +20,8 @@ function getName(){
     return this.name;
 }
 
-console.log(person);
-
 //Arrays
 let javaTabs = ['Rudimentary JAVA', 'Conditionals and Loops'];
-javaTabs[2] = 'Arrays';
 console.log(javaTabs);
 
 //Functions
@@ -69,4 +62,48 @@ switch(hour){
 }
 for(let i = 0; i < 5; i++){
     console.log('Hello, World');
+}
+
+//Encapsulation
+let freshman = {
+    name: 'Nikhil Munagala',
+    age: 18,
+    major: 'Computer Science BS',
+    getCourses:function(num){
+        for(let i = 0; i < num; i++){
+            var a = prompt("Enter first CS course: ");
+            document.write(a);
+        }
+    }
+};
+
+//Abstraction
+
+//Inheritance
+//Polymorphism(element.render)
+
+//constructor
+function Remote(length, width){
+    this.length = length;
+    this.width = width;
+    this.draw = function(){
+        console.log('draw rectangle');
+    }
+}
+const remote = new Remote(1,2);
+
+function Button(length, width, color){
+    this.length = length;
+    this.width = width;
+    this.color = color;
+    this.draw = function(){
+        console.log('draw button');
+    }
+}
+const button = new Button(12, 24, "red");
+
+function collegeStudent(){
+    return{
+        
+    }
 }

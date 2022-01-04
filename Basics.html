@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Basics of JAVA</title>
         </head>
-        <title>Basics of JAVA</title>
         <style>
-            body{
-                background-color: rgb(235, 245, 147);
-                font-family:'Times New Roman', Times, serif;
-                color:darkblue;
-            }
+        body{
+            background: linear-gradient(-90deg, #e4ee52, #3ce759, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+    }
+        @keyframes change {
+        0%{
+            background-position: 50% 50%;
+        }
+         50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+      }
+    }
             .Intro{
                 font-size: 24px;
             }
             .Basics {
-                font-size: 23px;
+                font-size: 30px;
                 margin-left: 450px;
             }
             .javameaning{
@@ -69,7 +81,7 @@
             <h1>What is JAVA?</h1>
             <a class = "javameaning" href="https://www.youtube.com/watch?v=m9QJSLzcG1E&t=6s">JAVA?</a>
             <p class = "remark"> By the way, you can use whatever IDE you want to code. If you're unfamiliar with what an 
-                Integrated Development Environment is, it's basically the software where you can code your 
+                Integrated Development Environment is, it's basically the software/text editor where you can code your 
                 programs. I personally use Vscode since I can download many extensions to organize my code
                 better. 
              </p>
@@ -85,6 +97,7 @@
              <a class  = "Math" href="https://www.youtube.com/watch?v=ufegX5o8uc4">Math Functions</a>
             <img class = "Javgif" src="images/8NkOQ.gif" alt="Java gif">
             <img class = "Welcome" src="images/Welcome.png" alt="Welcome to JAVA!">
+            <script src = "basics.js"></script>
         </body>
         </html>
     </head>

@@ -10,14 +10,14 @@
   <style>
     body{
       background: linear-gradient(-90deg, #e4ee52, #3ce759, #23A6D5, #23D5AB);
-      background-size: 400% 400%;
+      background-size: 300% 300%;
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       position: relative;
       animation: change 10s ease-in-out infinite;
     }
     @keyframes change {
       0%{
-        background-position: 0% 50%;
+        background-position: 50% 50%;
       }
       50%{
         background-position: 100% 50%;
@@ -32,12 +32,13 @@
       max-width: fit-content;
       max-height: fit-content;
       flex-direction: row;
+      gap: 2em;
     }
     .tab{
       border: 1px #ccc solid;
       border-radius: 20px;
-      padding: 10px;
-      font-size: 20px;
+      padding: 5px;
+      font-size: 15px;
       width: 200px;
     }
 
@@ -69,20 +70,17 @@
     }
 
     .img-me{
-      width: 500px;
+      width: 450px;
+      margin-top: -35px;
       float: right;
       position: relative;
-      object-fit: initial;
+      object-fit: cover;
     }
 
     .AboutMe {
-    font-size: large;
-    }
-
-    .username {
-      font-weight: bold;
       font-size: large;
     }
+
     .Contents{
       font-size: 22px;
       color:bisque;
@@ -103,31 +101,30 @@
   </style>
   <body>
     <!-- <script src = "index.js"></script> -->
-    <script src = "script.js"></script>
+    <script src = "index.js"></script>
     <div class = "mytabs">
       <div class = "tab"> <a href="Contact.html">Contact Me</a></div> 
-      <div class = "tab"> Thank You! </div> 
-      <div class = "tab"> About Me</div>
-      <div class = "tab"> What is Computer Science?</div>
+      <div class = "tab"> <a href="#AboutMe"> About Me</a></div>
+      <div class = "tab"> <a href="#section-cs">What is Computer Science</a> </div>
     </div>
     <p class="welcome">Intro To Java</p>
-    <a href="#section-cs">Intro</a>
     <img class = "img-me" src="images/NikhilsaiMunagala.jpg" alt="Picture of me">
-    <p class="username">nikhilsai.munagala@gmail.com</p>
-    <p class="AboutMe">
+    <p class="AboutMe"> <a href="#AboutMe"></a>
       My name is Nikhil Munagala and I am a freshman at Rutgers University majoring in Computer Science.
-      I am passionate about coding and learning various programming languages so that I can be exposed more to the
-      world of computer Science. I chose Computer Science as my major because I like communicating with a computer
-      to get my ideas right. There is a lot of logic involved in code, and it can be a bit frustrating, but 
-      logic is essential to computer science. As you learn more about Java in this website, there will be many 
+      I am passionate about coding and learning various programming languages so that I can be more engaged in the
+      world of computer Science. I chose Computer Science as my major because I want to learn how to code so 
+      that I can improve my problem solving skills. Before taking Intro to CS, I had no prior coding experience.
+      I wanted to figure out a way to learn programming languages but at the same time challenge myself to design 
+      solutions to problems using logic. There can be a lot of theory and logic involved in code, and it can be 
+      a bit frustrating, but it is essential to computer science. As you learn more about Java in this website, there will be many 
       functions/methods which require prior experience of math. Just like math, CS is part of our everyday 
-      lives. For example, a thermostat represents a function which regulates the temperature. With all of this 
-      considered, my main goal in life is to engage in the field of Computer Science and treat it as a fun 
-      activity.
+      lives. For example, a thermostat represents a function which regulates the temperature in degrees 
+      Fahrenheit or Celsius. With all of this considered, my main goal is to pursue a career in Computer
+      Science in the future. 
     </p>
     <h1 class = "section-cs">What is Computer Science?</h1>
     <p>Most people think computer science is all about code, however that isn't true. Computer Science 
-      involves problem solving, and that skill can not only lead one to jobs, but can also create an 
+      involves problem solving, and that skill cannot only lead one to jobs, but can also create an 
       interest in learning the profession. Problem solving is the most efficient way of expressing your 
       idea, but to do that you need an algorithm. <br> <br> What is an algorithm? An algorithm is a set of steps
       that is used to solve a problem. For example, to make oatmeal, you have to boil the milk then put oats.
@@ -149,9 +146,6 @@
         <li><a class = "TimevSpace" href="AlgoEfficiency.html">Algorithm Efficiency</a></li>
       </ol>
       <img class = "img-JAVA" src="images/Java.png" alt="Java">
-      <h2 class = "Resume">My Resume</h2>
-      <a class = "College Resume" href="Resume/Nikhil Munagala- College Resume-2.pdf" target = "blank"> My Resume</a> <br><br><br>
-      <a href="#">Jump To Top</a>
     </p>
   </body>
 </html>

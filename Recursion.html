@@ -8,11 +8,24 @@
             <title>Recursion</title>
         </head>
         <style>
-            body{
-                background-color: rgb(235, 245, 147);
-                font-family:'Times New Roman', Times, serif;
-                color:darkblue;
-            }
+             body{
+            background: linear-gradient(-90deg, #e4ee52, #3ce759, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+    }
+        @keyframes change {
+        0%{
+            background-position: 50% 50%;
+        }
+         50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+      }
+    }
             .Recursion{
                 font-size: 32px;
                 text-align: center;
@@ -32,15 +45,20 @@
             .CodingBat{
                 font-size: 20px;
             }
+            .Recurs{
+                width: 346px;
+                float:right;
+                margin-top:-200px;
+            }
         </style>
         <body>
             <p class = "Recursion"> Recursion</p>
             <h1 class = "Basics">Recursion Basics</h1>
             <a class = "RecThinking" href="https://www.youtube.com/watch?v=G009sBytEh8"> Recursion</a>
-            <h2 class = "RecDataStruct">Recursive Structure + How to avoid calling again</h2>
             <h3 class = "Practice">Sample Practice Recursive Problems</h3>
             <a class = "CodingBat" href="https://codingbat.com/java/Recursion-1"> CodingBat</a>
             <a href="IntroToJava.html"></a>
+            <img class = "Recurs" src="images/Recurs.png" alt="Recursion happening over again.">
         </body>
         </html>
     </head>

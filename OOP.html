@@ -8,10 +8,23 @@
     <title>Object-Oriented Programming</title>
   </head>
   <style>
-    body{
-        background-color: rgb(235, 245, 147);
-        font-family:'Times New Roman', Times, serif;
-        color:darkblue;
+     body{
+            background: linear-gradient(-90deg, #e4ee52, #3ce759, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+    }
+        @keyframes change {
+        0%{
+            background-position: 50% 50%;
+        }
+         50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+      }
     }
     .OOP{
       font-size: 36px;
@@ -29,10 +42,21 @@
     .FunHappens{
       font-size: 28px;
     }
+    .Video{
+      font-size: 24px;
+    }
+    .Person{
+      float: right;
+      margin-top: -325px;
+    }
   </style>
         <p class = "OOP"> Object-Oriented Programming(OOP)</p>
         <h1 class = "PrimvRef">Primitive v Reference Data Types</h1>
+        <a class = "Video" href="https://www.youtube.com/watch?v=6gJrlxWa-Fk"></a>
+        <a class = "Video" href="https://www.youtube.com/watch?v=LTnp79Ke8FI" target = "blank">Stack v Heap</a>
         <h2 class = "StringObj">String Object with Methods + Recursion</h2>
-        <h3 class = "OOPBasics">Object-Oriented Programming Basics</h3>
-        <h4 class = "FunHappens">Creating Classes/Objects </h4>
+        <a class = "Video" href="https://www.youtube.com/watch?v=6e4_jrsKGAE">String Recursion</a>
+        <h3 class = "OOPBasics">Object-Oriented Programming</h3>
+        <a class = "Video" href="https://www.youtube.com/watch?v=j0lBrYSlYaU">OOP Basics</a> <br>
+        <img class ="Person" src="images/Object.png" alt="An example of an object.">
 </html>
